@@ -8,20 +8,32 @@ require("phpmailer\src\SMTP.php");
 require("phpmailer\src\Exception.php");
 
 
+//here to change information about SMTP SERVER
+
 
 $mail = new PHPMailer(true);
 
 try {
     $mail->SMTPDebug = 2;                                       
-    $mail->isSMTP();                                            
+    $mail->isSMTP();    
+    
+    //Gmail
     $mail->Host       = 'smtp.gmail.com';                    
-    $mail->SMTPAuth   = true;                             
-    $mail->Username   = 'amjadkhaliliah1998@gmail.com';                 
+    $mail->SMTPAuth   = true;          
+    
+    
+    //SENDER MAIL WHICH WILL BE STATIC
+    $mail->Username   = 'amjadkhaliliah1998@gmail.com'; 
+    
+    //Password for integration 2-App Password
     $mail->Password   = 'password';                        
     $mail->SMTPSecure = 'tls';                              
     $mail->Port       = 587;  
   
-    $mail->setFrom('amjadkhaliliah1998@gmail.com', 'Name');           
+    $mail->setFrom('amjadkhaliliah1998@gmail.com', 'Name');  
+    
+    
+    //HERE IS THE RECIVER ADDRESS WHICH WILL BE STATIC 
     $mail->addAddress('amjad.w.kh@icloud.com');
     
        
