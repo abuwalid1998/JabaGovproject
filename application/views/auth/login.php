@@ -5,7 +5,7 @@
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
          <div class="card card-signin my-5">
             <div class="card-body">
-            <h5 class="card-title text-center">LOGIN</h5>
+            <h5 class="card-title text-center">تسجيل دخول</h5>
 
             <!-- Alert -->
             <div class="row">
@@ -24,25 +24,25 @@
             <?= form_open("auth/login", ["class" => "form-signin"]) ?>
                <div class="form-label-group">
                   <input type="text" name="identity" value="" class="form-control" id="inputEmail" placeholder="Email" required autofocus>  
-                  <label for="inputEmail">Email</label>
+                  <label for="inputEmail">البريد الألكتروني</label>
                </div>
 
                <div class="form-label-group">
                   <input type="password" name="password" id="inputPassword" value="" class="form-control" placeholder="Password" required>
-                  <label for="inputPassword">Password</label>
+                  <label for="inputPassword">كلمة المرور</label>
                </div>
 
                <div class="custom-control custom-checkbox mb-3">
                   <input type="checkbox" name="remember" value="1" class="custom-control-input" id="remember">
-                  <label class="custom-control-label" for="remember">Remember Me</label>
+                  <label class="custom-control-label" for="remember">تذكرني</label>
                </div>
 
-               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign In</button>
+               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">دخول</button>
 
                <hr class="my-4">
 
                <div class="text-center mt-1">
-                  <a href="<?= base_url('auth/forgot_password') ?>">Forgot Your Password ? </a> 
+                  <a href="<?= base_url('auth/forgot_password') ?>">نسيت كلمة المرور</a> 
                </div>
                
             <?= form_close() ?>

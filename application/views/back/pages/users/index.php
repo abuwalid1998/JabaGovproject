@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col">
-			<h2>Data Users</h2>
+			<h2>المستخدمين</h2>
 		</div>
 	</div>
 
@@ -31,11 +31,11 @@
       <table class="table table-striped table-bordered"  cellspacing="0" width="100%">
          <thead>
 				<tr>
-					<th>Username</th>
-					<th>Email</th>
-					<th>First Name</th>
-					<th>Last Name</th>
-					<th>Aksi</th>
+					<th>أسم المستخدم</th>
+					<th>البريد الألكتروني</th>
+					<th>الأسم الأول</th>
+					<th>الأسم الأخير</th>
+					<th>تعديل البيانات</th>
 				</tr>
          </thead>
          <tbody>
