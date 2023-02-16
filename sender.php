@@ -9,7 +9,7 @@ require("phpmailer\src\Exception.php");
 
 
 //here to change information about SMTP SERVER
-
+//last update here
 
 $mail = new PHPMailer(true);
 
