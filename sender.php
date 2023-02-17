@@ -39,7 +39,7 @@ try {
        
     $mail->isHTML(true);                                  
     $mail->Subject = $_POST["subject"];
-    $mail->Body    = $_POST['name']+$_POST["message"]+$_POST['email'];
+    $mail->Body    = $_POST['name'].'\n'.$_POST["message"].'\n'.$_POST['email'];
     $mail->AltBody = 'Body in plain text for non-HTML mail clients';
     $mail->send();
     echo 
