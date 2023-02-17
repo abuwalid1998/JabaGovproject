@@ -8,17 +8,25 @@ require 'vendor/autoload.php';
 
 $mail = new PHPMailer(true);
 
+//edit for sender mail configurations 
+//
+
 try {
     $mail->SMTPDebug = 2;                                       
     $mail->isSMTP();                                            
     $mail->Host       = 'smtp.gfg.com;';                    
-    $mail->SMTPAuth   = true;                             
+    $mail->SMTPAuth   = true;    
+
+    //sender mail configurations 
     $mail->Username   = 'amjadkhaliliah1998@gmail.com';                 
     $mail->Password   = 'fhfphbenwzxiapzg';                        
     $mail->SMTPSecure = 'tls';                              
     $mail->Port       = 587;  
   
-    $mail->setFrom('amjadkhaliliah1998@gmail.com', 'Name');           
+    $mail->setFrom('amjadkhaliliah1998@gmail.com', 'Name');    
+    
+    
+    //Reciver Mail address
     $mail->addAddress('amjad.w.kh@icloud.com');
     
        

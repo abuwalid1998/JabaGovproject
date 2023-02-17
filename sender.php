@@ -39,7 +39,7 @@ try {
        
     $mail->isHTML(true);                                  
     $mail->Subject = $_POST["subject"];
-    $mail->Body    = $_POST["message"];
+    $mail->Body    = $_POST['name']+$_POST["message"]+$_POST['email'];
     $mail->AltBody = 'Body in plain text for non-HTML mail clients';
     $mail->send();
     echo 
@@ -55,7 +55,17 @@ try {
     ";
     
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo 
+    "
+    <script>
+    
+    alert('حدث خطأ في أرسال الرسالة ... الرجاء المحاولة لاحقا');
+
+    document.location.href = 'index.php';
+    
+    </script>
+    
+    ";
 }
 
 
