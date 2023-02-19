@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row mb-4">
 		<div class="col">
-			<h3>Form Background Jurusan</h3>
+			<h3>الخلفية الرئيسية</h3>
 		</div>
 	</div>
 
