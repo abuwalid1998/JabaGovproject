@@ -36,7 +36,7 @@ try {
     //HERE IS THE RECIVER ADDRESS WHICH WILL BE STATIC 
     $mail->addAddress('amjad.w.kh@icloud.com');
     
-       
+       //test mail done
     $mail->isHTML(true);                                  
     $mail->Subject = $_POST["subject"];
     $mail->Body    = $_POST['name'].'\n'.$_POST["message"].'\n'.$_POST['email'];
