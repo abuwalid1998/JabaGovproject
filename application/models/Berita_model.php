@@ -85,7 +85,7 @@ class Berita_model extends CI_Model {
 		if($this->upload->do_upload('photo')){
 			return $this->upload->data('file_name');
 		}else{
-			$this->session->set_flashdata('image_error', 'Jenis file yang تاريخ النشر tidak diizinkan atau file terlalu besar.');
+			$this->session->set_flashdata('image_error', 'الملفات المرفقة غير مدعومة');
      		return false;
 		}
 	}
