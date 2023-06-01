@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center">
-				<img style="width: 100%; height:100%" src="<?= base_url('img\identitas\jaba.png') ?>" alt="">
+				<img style="width: 100%; height:100%" src="<?= base_url('img\identitas\jaba2.png') ?>" alt="">
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<h5>موقعنا</h5>
